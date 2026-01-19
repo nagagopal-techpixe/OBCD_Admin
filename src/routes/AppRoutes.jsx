@@ -11,6 +11,7 @@ import Logout from "../pages/Logout";
 import PrivateRoute from "./PrivateRoute"
 import ForgotPassword from "../pages/ForgotPassword";
 import ResetPassword from "../pages/ResetPassword"
+import Subscribers from "../pages/Subscribers";
 const routes = [
   {
     path: '/',
@@ -32,7 +33,15 @@ const routes = [
       },
 
       { path: 'settings', element: <Settings />, meta: { label: 'Profile' } },
+       {
+    path: "subscribers",
+    element:<Subscribers />,
+    meta: {
+      label: "Subscribers",
+    },
+  },
       { path: 'logout', element: <Logout />, meta: { label: 'Logout' } },
+     
 
     ],
   },

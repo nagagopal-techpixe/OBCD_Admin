@@ -95,26 +95,6 @@ const Header = ({ onMenuClick }) => {
           {/* Dropdown menu */}
           {isDropdownOpen && (
             <div className={`absolute sm:right-0 -right-[6rem] mt-0 sm:w-80 w-64 rounded-md shadow-lg py-1 ${theme === 'dark' ? 'bg-gray-800' : 'bg-white'} ring-1 ring-black ring-opacity-5 z-50`}>
-              <div className="px-4 py-3 border-b border-gray-200 dark:border-gray-700">
-                <p className="lg:text-[18px] md:text-[16px] text-[14px] font-medium text-gray-900 dark:text-gray-900 truncate">Bharadwaja Chiluka</p>
-                <p className="lg:text-[14px] md:text-[12px] text-[10px] text-gray-500 dark:text-gray-400">BharadwajaChilukaadmin@example.com</p>
-              </div>
-              <div className="py-1">
-                <a
-                  href="settings"
-                  className="flex items-center px-4 py-2 text-md text-gray-700 "
-                >
-                  <Settings className="w-4 h-4 mr-3" />
-                  Settings
-                </a>
-                <a
-                  href="#"
-                  className="flex items-center px-4 py-2 text-md text-red-600"
-                >
-                  <LogOut className="w-4 h-4 mr-3" />
-                  Logout
-                </a>
-              </div>
             </div>
           )}
         </div>
